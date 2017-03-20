@@ -18,5 +18,12 @@ public:
 	ATank* GetControlledTank() const;
 	
 	void BeginPlay() override;
+
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+private:
+	void AimTowardsCrosshair();
+
 	
 };
